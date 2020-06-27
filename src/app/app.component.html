@@ -1,0 +1,40 @@
+<mat-drawer-container fullscreen>
+    <mat-drawer mode="side" opened="true">
+        <!-- <mat-menu></mat-menu>
+        <a
+            mat-menu-item
+            *ngFor="let item of examples"
+            [routerLink]="item.route"
+            routerLinkActive="active"
+            >{{ item.title }}</a
+        > -->
+        <button
+            style="
+                background: #020246;
+                color: white;
+                width: 87px;
+                padding: 7px;
+                margin: 10px;
+            "
+            mat-icon-button
+            [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu"
+        >
+            Chart
+        </button>
+        <mat-menu #menu="matMenu">
+            <button
+                mat-menu-item
+                *ngFor="let item of examples"
+                [routerLink]="item.route"
+                routerLinkActive="active"
+            >
+                <span>{{ item.title }}</span>
+            </button>
+        </mat-menu>
+    </mat-drawer>
+    <mat-drawer-content>
+        <h1>Stock Analysis</h1>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

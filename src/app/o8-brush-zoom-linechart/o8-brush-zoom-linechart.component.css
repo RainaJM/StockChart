@@ -1,0 +1,32 @@
+.container-fluid {
+    height: calc(100vh - (40px));
+    overflow: auto;
+    display: flex;
+}
+.zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1px;
+}
+line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1px;
+}
+.axis--x,
+.focus,
+.context,
+.domain {
+    stroke: steelblue;
+}
+button {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+}

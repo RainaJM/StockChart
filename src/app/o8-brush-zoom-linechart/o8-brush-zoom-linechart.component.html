@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div style="margin-left: 40px; right: 15px;">
+        <button (click)="drawHLine()">
+            <img
+                src="/assets/images/horizontal.png"
+                title="Horizontal Line"
+                style="width: 38px;"
+            />
+        </button>
+        <button (click)="drawVLine()">
+            <img
+                src="/assets/images/verticalline.png"
+                title="Vertical Line"
+                style="width: 38px;"
+            />
+        </button>
+        <button (click)="drawTLine()">
+            <img
+                src="/assets/images/trendline.png"
+                title="Trend Line"
+                style="width: 38px;"
+            />
+        </button>
+    </div>
+
+    <svg
+        width="960"
+        height="500"
+        style="background: black; color: steelblue;"
+    ></svg>
+</div>
